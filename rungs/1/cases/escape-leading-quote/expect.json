@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "q": "\"hi\""
+  },
+  "note": "escapes let a value begin with a literal quote"
+}

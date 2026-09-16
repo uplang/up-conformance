@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "t": [
+      "#f00",
+      "red"
+    ]
+  }
+}

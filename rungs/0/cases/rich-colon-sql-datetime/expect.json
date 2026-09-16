@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "ts": "2026-06-18 14:30:00"
+  },
+  "note": "space datetime needs the colon form"
+}

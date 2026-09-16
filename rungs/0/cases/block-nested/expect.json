@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": {
+      "host": "localhost",
+      "tls": {
+        "enabled": "true"
+      }
+    }
+  }
+}

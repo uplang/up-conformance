@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": [
+      "web",
+      "api",
+      "production"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "name": "“value”"
+  },
+  "lint": [
+    "W_SMART_QUOTES"
+  ]
+}

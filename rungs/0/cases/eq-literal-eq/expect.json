@@ -1,0 +1,6 @@
+{
+  "expect": "parse",
+  "model": {
+    "query": "a=b"
+  }
+}

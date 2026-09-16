@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "name": "Ada"
+  },
+  "note": "tab is whitespace"
+}

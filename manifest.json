@@ -1,0 +1,1183 @@
+{
+  "version": "1.1.0",
+  "description": "UP language-neutral conformance corpus, partitioned by rung.",
+  "spec": "https://uplang.org/specification/",
+  "schema": "schema/expect.schema.json",
+  "layout": "rungs/<n>/cases/<name>/{input.up, expect.json}",
+  "rungs": [
+    {
+      "rung": 0,
+      "title": "Minimal core",
+      "provisional": false,
+      "count": 105,
+      "cases": [
+        {
+          "name": "bad-char-cr",
+          "expect": "error",
+          "code": "E_BAD_CHAR"
+        },
+        {
+          "name": "bad-char-in-quotes",
+          "expect": "error",
+          "code": "E_BAD_CHAR"
+        },
+        {
+          "name": "bad-char-nul",
+          "expect": "error",
+          "code": "E_BAD_CHAR"
+        },
+        {
+          "name": "bare-multiword",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "blank-lines",
+          "expect": "parse"
+        },
+        {
+          "name": "block",
+          "expect": "parse"
+        },
+        {
+          "name": "block-empty",
+          "expect": "parse"
+        },
+        {
+          "name": "block-nested",
+          "expect": "parse"
+        },
+        {
+          "name": "bom",
+          "expect": "error",
+          "code": "E_BOM"
+        },
+        {
+          "name": "closer-glued-hash",
+          "expect": "error",
+          "code": "E_CONTENT_AFTER_CLOSER"
+        },
+        {
+          "name": "colon-hash",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-hash-empty",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "colon-line",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-quote-comment",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-quote-glued-hash",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "colon-quote-trailing",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "colon-quoted-whitespace",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-trim",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-unterminated",
+          "expect": "error",
+          "code": "E_UNTERMINATED_STRING"
+        },
+        {
+          "name": "colon-url-fragment",
+          "expect": "parse"
+        },
+        {
+          "name": "comment-line",
+          "expect": "parse"
+        },
+        {
+          "name": "content-after-closer",
+          "expect": "error",
+          "code": "E_CONTENT_AFTER_CLOSER"
+        },
+        {
+          "name": "content-after-opener",
+          "expect": "error",
+          "code": "E_INLINE_UNSUPPORTED",
+          "rung_exact": true
+        },
+        {
+          "name": "crlf",
+          "expect": "parse"
+        },
+        {
+          "name": "dup-in-list-block",
+          "expect": "error",
+          "code": "E_DUPLICATE_KEY"
+        },
+        {
+          "name": "dup-nested-block",
+          "expect": "error",
+          "code": "E_DUPLICATE_KEY"
+        },
+        {
+          "name": "duplicate-key",
+          "expect": "error",
+          "code": "E_DUPLICATE_KEY"
+        },
+        {
+          "name": "empty-key-colon",
+          "expect": "error",
+          "code": "E_EMPTY_KEY"
+        },
+        {
+          "name": "empty-key-eq",
+          "expect": "error",
+          "code": "E_EMPTY_KEY"
+        },
+        {
+          "name": "empty-string",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-hash-glued",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-literal-eq",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-packed",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-quote-glued-hash",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "eq-quoted-packed",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-single",
+          "expect": "parse"
+        },
+        {
+          "name": "eq-spaces",
+          "expect": "error",
+          "code": "E_EQ_SPACES"
+        },
+        {
+          "name": "eq-stray-token",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "forgot-quotes",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "hash-data-line",
+          "expect": "parse",
+          "lint": [
+            "W_HASH_LIKE_DATA"
+          ]
+        },
+        {
+          "name": "hash-empty-value",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "inner-quote",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "list",
+          "expect": "parse"
+        },
+        {
+          "name": "list-comment",
+          "expect": "parse"
+        },
+        {
+          "name": "list-empty",
+          "expect": "parse"
+        },
+        {
+          "name": "list-item-glued-hash",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "list-nested",
+          "expect": "parse"
+        },
+        {
+          "name": "list-of-blocks",
+          "expect": "parse"
+        },
+        {
+          "name": "list-quoted-items",
+          "expect": "parse"
+        },
+        {
+          "name": "list-quoted-url",
+          "expect": "parse"
+        },
+        {
+          "name": "mismatched-closer",
+          "expect": "error",
+          "code": "E_MISMATCHED_CLOSER"
+        },
+        {
+          "name": "missing-value",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "mistake-json-object",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "mistake-json-quoted-key",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "mistake-list-bare-url",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "mistake-multiword-unquoted",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "mistake-space-before-colon",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "mistake-toml-section",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "mistake-toml-spaced-eq",
+          "expect": "error",
+          "code": "E_EQ_SPACES"
+        },
+        {
+          "name": "mistake-unterminated-ws-quote",
+          "expect": "error",
+          "code": "E_UNTERMINATED_STRING"
+        },
+        {
+          "name": "mistake-yaml-mapping",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "mixed-forms",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        },
+        {
+          "name": "mixed-forms-eq-colon",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        },
+        {
+          "name": "mixed-forms-eq-first",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        },
+        {
+          "name": "non-ascii-ws",
+          "expect": "parse",
+          "lint": [
+            "W_NON_ASCII_WS"
+          ]
+        },
+        {
+          "name": "opener-colon-brace",
+          "expect": "parse",
+          "lint": [
+            "W_LONE_OPENER"
+          ]
+        },
+        {
+          "name": "opener-colon-braces-text",
+          "expect": "parse"
+        },
+        {
+          "name": "opener-colon-bracket",
+          "expect": "parse",
+          "lint": [
+            "W_LONE_OPENER"
+          ]
+        },
+        {
+          "name": "opener-eq-brace",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "opener-eq-bracket",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "opener-eqspaces-brace",
+          "expect": "error",
+          "code": "E_EQ_SPACES"
+        },
+        {
+          "name": "opener-eqspaces-bracket",
+          "expect": "error",
+          "code": "E_EQ_SPACES"
+        },
+        {
+          "name": "opener-glued-hash",
+          "expect": "error",
+          "code": "E_INLINE_UNSUPPORTED"
+        },
+        {
+          "name": "opener-nospace-brace",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "opener-nospace-bracket",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "opener-spacecolon-brace",
+          "expect": "parse"
+        },
+        {
+          "name": "opener-spacecolon-bracket",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-colon-ipv6-bracket",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-colon-json",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-colon-sql-datetime",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-feet-inches",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-ipv6-bare",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-ipv6-bracket-ws",
+          "expect": "error",
+          "code": "E_INLINE_UNSUPPORTED",
+          "rung_exact": true
+        },
+        {
+          "name": "rich-semver-constraint",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-template-span",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-timestamp",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-url",
+          "expect": "parse"
+        },
+        {
+          "name": "rich-winpath",
+          "expect": "parse"
+        },
+        {
+          "name": "separator-value-lint",
+          "expect": "parse",
+          "lint": [
+            "W_SEPARATOR_VALUE"
+          ]
+        },
+        {
+          "name": "smart-quotes",
+          "expect": "parse",
+          "lint": [
+            "W_SMART_QUOTES"
+          ]
+        },
+        {
+          "name": "stray-close-brace",
+          "expect": "error",
+          "code": "E_STRAY_CLOSER"
+        },
+        {
+          "name": "stray-close-bracket",
+          "expect": "error",
+          "code": "E_STRAY_CLOSER"
+        },
+        {
+          "name": "surprise-dash-item",
+          "expect": "parse"
+        },
+        {
+          "name": "surprise-double-equals",
+          "expect": "parse",
+          "lint": [
+            "W_SEPARATOR_VALUE"
+          ]
+        },
+        {
+          "name": "surprise-slash-comment",
+          "expect": "parse"
+        },
+        {
+          "name": "surprise-trailing-comma",
+          "expect": "parse"
+        },
+        {
+          "name": "tabs",
+          "expect": "parse"
+        },
+        {
+          "name": "unclosed-block",
+          "expect": "error",
+          "code": "E_UNCLOSED_BLOCK"
+        },
+        {
+          "name": "unclosed-block-in-list",
+          "expect": "error",
+          "code": "E_UNCLOSED_BLOCK"
+        },
+        {
+          "name": "unclosed-list",
+          "expect": "error",
+          "code": "E_UNCLOSED_LIST"
+        },
+        {
+          "name": "unclosed-list-anon-block",
+          "expect": "error",
+          "code": "E_UNCLOSED_LIST"
+        },
+        {
+          "name": "unterminated-string",
+          "expect": "error",
+          "code": "E_UNTERMINATED_STRING"
+        },
+        {
+          "name": "ws-quote-glued-hash",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "ws-quoted",
+          "expect": "parse"
+        },
+        {
+          "name": "ws-single",
+          "expect": "parse"
+        }
+      ]
+    },
+    {
+      "rung": 1,
+      "title": "Escapes & inline forms",
+      "provisional": false,
+      "count": 43,
+      "cases": [
+        {
+          "name": "bad-escape",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-escape-colon",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-escape-eq",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-escape-list",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-escape-surrogate",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-escape-surrogate-pair",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "bad-unicode",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "colon-escape",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-astral-literal",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-backslash",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-controls",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-leading-quote",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-quote",
+          "expect": "parse"
+        },
+        {
+          "name": "escape-unicode",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-bad-escape",
+          "expect": "error",
+          "code": "E_BAD_ESCAPE"
+        },
+        {
+          "name": "inline-block",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-block-eq",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-colon-key",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        },
+        {
+          "name": "inline-comma-data",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-dup",
+          "expect": "error",
+          "code": "E_DUPLICATE_KEY"
+        },
+        {
+          "name": "inline-empty-block",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-empty-key",
+          "expect": "error",
+          "code": "E_EMPTY_KEY"
+        },
+        {
+          "name": "inline-empty-list",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-empty-value",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "inline-eq-wide",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-hash-comment",
+          "expect": "error",
+          "code": "E_INLINE_UNSUPPORTED"
+        },
+        {
+          "name": "inline-hash-glued-item",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-hash-key",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "inline-item-eq",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-list",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-list-quoted",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-midtoken-quote",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-missing-value",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "inline-mixed-forms",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        },
+        {
+          "name": "inline-multiword",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "inline-quote-dangling",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "inline-quoted-closer",
+          "expect": "error",
+          "code": "E_INLINE_UNSUPPORTED"
+        },
+        {
+          "name": "inline-quoted-escape",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-quoted-key",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "inline-trailing-glued-hash",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "inline-unterminated",
+          "expect": "error",
+          "code": "E_UNTERMINATED_STRING"
+        },
+        {
+          "name": "inline-ws-block",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-ws-value-eq",
+          "expect": "error",
+          "code": "E_MIXED_FORMS"
+        }
+      ]
+    },
+    {
+      "rung": 2,
+      "title": "Annotation syntax",
+      "provisional": false,
+      "count": 24,
+      "cases": [
+        {
+          "name": "annotated-missing-value",
+          "expect": "error",
+          "code": "E_MISSING_VALUE"
+        },
+        {
+          "name": "args",
+          "expect": "parse"
+        },
+        {
+          "name": "args-empty",
+          "expect": "parse"
+        },
+        {
+          "name": "args-space",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-double",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-empty-name",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-empty-name-eol",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-empty-name-eq",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-non-letter",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bad-unclosed-args",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "bang-in-value",
+          "expect": "parse"
+        },
+        {
+          "name": "block-value",
+          "expect": "parse"
+        },
+        {
+          "name": "colon-form",
+          "expect": "parse"
+        },
+        {
+          "name": "definition-shape",
+          "expect": "parse"
+        },
+        {
+          "name": "empty-key-bang",
+          "expect": "error",
+          "code": "E_EMPTY_KEY"
+        },
+        {
+          "name": "eq-form",
+          "expect": "parse"
+        },
+        {
+          "name": "inline-item-bang",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "list-value",
+          "expect": "parse"
+        },
+        {
+          "name": "mistake-item-annotation",
+          "expect": "error",
+          "code": "E_BAD_ANNOTATION"
+        },
+        {
+          "name": "mixed-annotated-plain",
+          "expect": "parse"
+        },
+        {
+          "name": "namespaced",
+          "expect": "parse"
+        },
+        {
+          "name": "opaque-no-coercion",
+          "expect": "parse"
+        },
+        {
+          "name": "surprise-space-before-bang",
+          "expect": "error",
+          "code": "E_DANGLING_TOKEN"
+        },
+        {
+          "name": "ws-form",
+          "expect": "parse"
+        }
+      ]
+    },
+    {
+      "rung": 3,
+      "title": "Multiline strings",
+      "provisional": false,
+      "count": 24,
+      "cases": [
+        {
+          "name": "mstr-annotated",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-bad-dedent",
+          "expect": "error",
+          "code": "E_BAD_DEDENT"
+        },
+        {
+          "name": "mstr-bare-mid",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-basic",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-blank-exempt",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-close-comment",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-close-glued-hash",
+          "expect": "error",
+          "code": "E_CONTENT_AFTER_CLOSER"
+        },
+        {
+          "name": "mstr-close-junk",
+          "expect": "error",
+          "code": "E_CONTENT_AFTER_CLOSER"
+        },
+        {
+          "name": "mstr-colon-raw",
+          "expect": "parse",
+          "lint": [
+            "W_LONE_OPENER"
+          ]
+        },
+        {
+          "name": "mstr-dedent",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-dedent-tab-mismatch",
+          "expect": "error",
+          "code": "E_BAD_DEDENT"
+        },
+        {
+          "name": "mstr-empty",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-eq-opener",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "mstr-gt-midline",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-heredoc-content",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-info-glued",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-info-spaced",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-inline",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "mstr-item",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-item-info",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-tab-margin",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-top-keyless",
+          "expect": "error",
+          "code": "E_BAD_OPENER"
+        },
+        {
+          "name": "mstr-trailing-newline",
+          "expect": "parse"
+        },
+        {
+          "name": "mstr-unterminated",
+          "expect": "error",
+          "code": "E_UNTERMINATED_STRING"
+        }
+      ]
+    },
+    {
+      "rung": 4,
+      "title": "Tables",
+      "provisional": true,
+      "count": 1,
+      "cases": [
+        {
+          "name": "tables",
+          "expect": "parse",
+          "provisional": true
+        }
+      ]
+    },
+    {
+      "rung": 5,
+      "title": "Documents & pragmas",
+      "provisional": true,
+      "count": 3,
+      "cases": [
+        {
+          "name": "multi-document",
+          "expect": "parse",
+          "provisional": true
+        },
+        {
+          "name": "pragma-after-content",
+          "expect": "error",
+          "provisional": true
+        },
+        {
+          "name": "pragmas",
+          "expect": "parse",
+          "provisional": true
+        }
+      ]
+    },
+    {
+      "rung": 6,
+      "title": "Error recovery",
+      "provisional": true,
+      "count": 1,
+      "cases": [
+        {
+          "name": "error-recovery",
+          "expect": "parse",
+          "provisional": true
+        }
+      ]
+    },
+    {
+      "rung": 7,
+      "title": "Templating",
+      "provisional": true,
+      "count": 1,
+      "cases": [
+        {
+          "name": "variables",
+          "expect": "parse",
+          "provisional": true
+        }
+      ]
+    }
+  ],
+  "typing": {
+    "layout": "typing/cases/<name>/{input.up, expect.json}",
+    "schema": "schema/typing.expect.schema.json",
+    "count": 37,
+    "cases": [
+      {
+        "name": "bool-true",
+        "expect": "typed"
+      },
+      {
+        "name": "bytes",
+        "expect": "typed"
+      },
+      {
+        "name": "date",
+        "expect": "typed"
+      },
+      {
+        "name": "datetime-offset",
+        "expect": "typed"
+      },
+      {
+        "name": "datetime-z",
+        "expect": "typed"
+      },
+      {
+        "name": "decimal-plain",
+        "expect": "typed"
+      },
+      {
+        "name": "decimal-scale",
+        "expect": "typed"
+      },
+      {
+        "name": "distribute-inline",
+        "expect": "typed"
+      },
+      {
+        "name": "distribute-int",
+        "expect": "typed"
+      },
+      {
+        "name": "duration",
+        "expect": "typed"
+      },
+      {
+        "name": "float-exp",
+        "expect": "typed"
+      },
+      {
+        "name": "float-inf",
+        "expect": "typed"
+      },
+      {
+        "name": "int-basic",
+        "expect": "typed"
+      },
+      {
+        "name": "int-negative",
+        "expect": "typed"
+      },
+      {
+        "name": "int-underscores",
+        "expect": "typed"
+      },
+      {
+        "name": "int-zero",
+        "expect": "typed"
+      },
+      {
+        "name": "open-mode-passthrough",
+        "expect": "typed",
+        "mode": "open"
+      },
+      {
+        "name": "open-qualified-passthrough",
+        "expect": "typed",
+        "mode": "open"
+      },
+      {
+        "name": "qualified-core",
+        "expect": "typed"
+      },
+      {
+        "name": "str-explicit",
+        "expect": "typed"
+      },
+      {
+        "name": "t-bad-args",
+        "expect": "error",
+        "code": "T_BAD_ARGS"
+      },
+      {
+        "name": "t-bad-args-decimal",
+        "expect": "error",
+        "code": "T_BAD_ARGS"
+      },
+      {
+        "name": "t-distribute-element",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-kind-block",
+        "expect": "error",
+        "code": "T_KIND"
+      },
+      {
+        "name": "t-mismatch-bool",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-mismatch-date",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-mismatch-int",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-mismatch-leap",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-mismatch-negzero",
+        "expect": "error",
+        "code": "T_MISMATCH"
+      },
+      {
+        "name": "t-reserved-class",
+        "expect": "error",
+        "code": "T_UNRESOLVED"
+      },
+      {
+        "name": "t-scale",
+        "expect": "error",
+        "code": "T_SCALE"
+      },
+      {
+        "name": "t-two-segment-core",
+        "expect": "error",
+        "code": "T_UNRESOLVED"
+      },
+      {
+        "name": "t-unresolved",
+        "expect": "error",
+        "code": "T_UNRESOLVED"
+      },
+      {
+        "name": "t-unresolved-core",
+        "expect": "error",
+        "code": "T_UNRESOLVED"
+      },
+      {
+        "name": "t-up-never-open",
+        "expect": "error",
+        "code": "T_UNRESOLVED",
+        "mode": "open"
+      },
+      {
+        "name": "time-frac-trim",
+        "expect": "typed"
+      },
+      {
+        "name": "unannotated-untouched",
+        "expect": "typed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "created": {
+      "$annotation": {
+        "name": "time.iso"
+      },
+      "$value": "2026-06-22"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "a": "=b"
+  },
+  "lint": [
+    "W_SEPARATOR_VALUE"
+  ]
+}

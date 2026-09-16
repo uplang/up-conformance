@@ -1,0 +1,8 @@
+{
+  "expect": "parse",
+  "model": {
+    "blk": {
+      "script": "body line"
+    }
+  }
+}

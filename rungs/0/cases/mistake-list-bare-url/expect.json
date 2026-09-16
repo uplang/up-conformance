@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_DANGLING_TOKEN",
+  "note": "Rung 0: a bare list item can't contain ':' etc.; quote it — [ \"https://...\" ]"
+}

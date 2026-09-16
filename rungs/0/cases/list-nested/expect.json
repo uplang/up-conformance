@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "matrix": [
+      [
+        "a"
+      ]
+    ]
+  },
+  "note": "a list item may itself be a list"
+}

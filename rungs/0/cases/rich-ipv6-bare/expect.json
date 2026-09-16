@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "addr": "::1"
+  },
+  "note": "bare IPv6 is a token; only the bracketed host form is a problem"
+}

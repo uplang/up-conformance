@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "ts": {
+      "$type": "datetime",
+      "$value": "2026-07-12T09:30:00Z"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "flag": "=on"
+  },
+  "lint": [
+    "W_SEPARATOR_VALUE"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "desc": ""
+  },
+  "note": "the empty string is explicit only; bare 'desc:' would be E_MISSING_VALUE"
+}

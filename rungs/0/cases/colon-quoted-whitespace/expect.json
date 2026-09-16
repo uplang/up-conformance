@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "note": "   hi   "
+  },
+  "note": "a colon value beginning with '\"' is a quoted string; quotes stripped, interior whitespace kept"
+}

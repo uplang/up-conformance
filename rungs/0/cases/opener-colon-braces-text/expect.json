@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": "{ this is a thing }"
+  },
+  "note": "braces with text are ordinary raw colon text — no lint"
+}

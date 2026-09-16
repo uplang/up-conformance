@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "t": {
+      "$type": "time",
+      "$value": "12:30:00.5"
+    }
+  }
+}

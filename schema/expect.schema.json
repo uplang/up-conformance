@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uplang.org/up-conformance/schema/expect.schema.json",
+  "title": "UP conformance case expectation",
+  "description": "The expected outcome of parsing the sibling input.up. One object per case directory.",
+  "type": "object",
+  "required": ["expect"],
+  "additionalProperties": false,
+  "properties": {
+    "expect": {
+      "enum": ["parse", "error"],
+      "description": "Whether a conforming parser MUST accept (parse) or reject (error) the input."
+    },
+    "model": {
+      "description": "expect=parse only. The data model the parse MUST yield, as an order-significant JSON projection: a string value is a JSON string, a block is a JSON object (key order significant), a list is a JSON array. Every scalar is a string — there is no type inference or coercion. An annotated member (Rung 2) projects as a tagged value object {\"$annotation\": {\"name\": <id>, \"args\": <raw>?}, \"$value\": <value projection>}: $annotation.name is the captured identifier, $annotation.args (present only when the use site wrote parentheses) is the raw text inside (…), and $value is the member's ordinary value projection. A member with no annotation is its bare value projection, unwrapped. List items are never annotated.",
+      "type": ["object", "array", "string"]
+    },
+    "lint": {
+      "description": "expect=parse only. Lint warning codes (W_*) a linter SHOULD emit for this input, in any order. Absent or [] means no warnings.",
+      "type": "array",
+      "items": { "type": "string", "pattern": "^W_[A-Z_]+$" }
+    },
+    "code": {
+      "description": "expect=error only. The stable error code (E_*) the parser MUST report. Match by code, not message text.",
+      "type": "string",
+      "pattern": "^E_[A-Z_]+$"
+    },
+    "error_contains": {
+      "description": "expect=error, provisional only. A substring the error message contains, used where no stable error code is assigned yet (a rung whose spec is not finalized).",
+      "type": "string"
+    },
+    "rung_exact": {
+      "description": "The expectation holds ONLY for a parser implementing exactly this rung, not cumulatively. Used for 'feature not yet supported' rejections (e.g. E_INLINE_UNSUPPORTED at Rung 0) whose input becomes valid at a higher rung. A runner for rung N MUST skip a rung_exact case from a lower rung.",
+      "const": true
+    },
+    "provisional": {
+      "description": "The expectation is NOT yet spec-final: it reflects the draft suite for a rung whose specification (notably the data model and error codes) is still being written. Provisional cases are excluded from a conformance verdict and exist to record intent and to light up once their rung lands.",
+      "const": true
+    },
+    "note": {
+      "description": "Human-readable explanation of what the case pins.",
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "expect": { "const": "error" } } },
+      "then": {
+        "anyOf": [
+          { "required": ["code"] },
+          { "required": ["error_contains"] }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": ":{"
+  },
+  "note": "space before ':' is not the colon form; ':{' is a bare token"
+}

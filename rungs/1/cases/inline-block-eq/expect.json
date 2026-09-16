@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "pt": {
+      "x": "1",
+      "y": "2"
+    }
+  },
+  "note": "inline block members may use the '=' form"
+}

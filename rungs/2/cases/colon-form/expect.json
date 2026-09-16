@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "note": {
+      "$annotation": {
+        "name": "literal"
+      },
+      "$value": "some text"
+    }
+  }
+}

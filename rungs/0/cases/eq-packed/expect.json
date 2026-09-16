@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "host": "localhost",
+    "port": "8080"
+  }
+}

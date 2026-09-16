@@ -1,0 +1,13 @@
+{
+  "expect": "parse",
+  "model": {
+    "servers": [
+      {
+        "host": "alpha"
+      },
+      {
+        "host": "beta"
+      }
+    ]
+  }
+}

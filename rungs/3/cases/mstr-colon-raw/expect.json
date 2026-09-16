@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "k": "<<<"
+  },
+  "lint": [
+    "W_LONE_OPENER"
+  ]
+}

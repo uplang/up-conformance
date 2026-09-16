@@ -1,0 +1,14 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": {
+      "$annotation": {
+        "name": "schema"
+      },
+      "$value": {
+        "host": "localhost",
+        "port": "8080"
+      }
+    }
+  }
+}

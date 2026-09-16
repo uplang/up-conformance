@@ -1,0 +1,6 @@
+{
+  "expect": "error",
+  "code": "T_UNRESOLVED",
+  "line": 1,
+  "note": "template and schema are reserved class names; nothing under up. resolves except up.type.<one of the ten>"
+}

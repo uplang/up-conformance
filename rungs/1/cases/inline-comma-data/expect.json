@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": [
+      "a,",
+      "b"
+    ]
+  },
+  "note": "a comma is ordinary item data, never a separator — the first item is the string 'a,'"
+}

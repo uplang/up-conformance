@@ -1,0 +1,8 @@
+{
+  "expect": "typed",
+  "model": {
+    "k": "v"
+  },
+  "mode": "open",
+  "note": "an unregistered qualified extension reference passes through untyped in open mode"
+}

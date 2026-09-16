@@ -1,0 +1,12 @@
+{
+  "expect": "parse",
+  "model": {
+    "amount": {
+      "$annotation": {
+        "name": "decimal",
+        "args": "2"
+      },
+      "$value": "5.00"
+    }
+  }
+}

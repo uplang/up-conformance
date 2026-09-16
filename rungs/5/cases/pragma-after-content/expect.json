@@ -1,0 +1,6 @@
+{
+  "expect": "error",
+  "provisional": true,
+  "error_contains": "must appear before content",
+  "note": "PROVISIONAL: error-message substring from the draft suite; no stable error code is assigned until this rung is specified."
+}

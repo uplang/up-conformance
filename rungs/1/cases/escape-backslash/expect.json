@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "path": "C:\\tmp"
+  },
+  "note": "\\\\ is a literal backslash"
+}

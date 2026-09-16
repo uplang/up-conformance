@@ -1,0 +1,6 @@
+{
+  "expect": "error",
+  "code": "T_UNRESOLVED",
+  "line": 1,
+  "note": "two-segment references are structurally unresolvable — the class segment is never elided (int or up.type.int, nothing between)"
+}

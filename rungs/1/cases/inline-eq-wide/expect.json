@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "m": {
+      "url": "http://x",
+      "dsn": "redis://y"
+    }
+  },
+  "note": "inline values may be wide (URLs etc.)"
+}

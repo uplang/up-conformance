@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_MISSING_VALUE",
+  "note": "inline member with a key but no value"
+}

@@ -1,0 +1,28 @@
+{
+  "expect": "parse",
+  "provisional": true,
+  "model": {
+    "documents": [
+      {
+        "server": {
+          "host": "localhost",
+          "port": 8080
+        }
+      },
+      {
+        "server": {
+          "host": "production.example.com",
+          "port": 443
+        }
+      },
+      {
+        "_name": "staging",
+        "server": {
+          "host": "staging.example.com",
+          "port": 8080
+        }
+      }
+    ]
+  },
+  "note": "PROVISIONAL: model reflects the draft suite; the rung's spec (and whether values coerce or stay opaque strings) is not finalized."
+}

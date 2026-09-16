@@ -1,0 +1,18 @@
+{
+  "expect": "parse",
+  "model": {
+    "tuple": {
+      "$annotation": {
+        "name": "type"
+      },
+      "$value": {
+        "type": [
+          "int",
+          "string",
+          "bool"
+        ]
+      }
+    }
+  },
+  "note": "The definition form is not special syntax — it is an annotated member whose value is a block. The element type names here are ordinary string data of the definition, not item annotations."
+}

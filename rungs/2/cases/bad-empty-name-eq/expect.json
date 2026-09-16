@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ANNOTATION",
+  "note": "Empty annotation name on the equals form."
+}

@@ -1,0 +1,24 @@
+{
+  "expect": "parse",
+  "model": {
+    "port": {
+      "$annotation": {
+        "name": "int"
+      },
+      "$value": "8080"
+    },
+    "enabled": {
+      "$annotation": {
+        "name": "bool"
+      },
+      "$value": "true"
+    },
+    "score": {
+      "$annotation": {
+        "name": "float"
+      },
+      "$value": "98.6"
+    }
+  },
+  "note": "Annotations are recognized but opaque: every value stays a string. There is NO type coercion (contrast the superseded draft, which coerced these to JSON number/bool)."
+}

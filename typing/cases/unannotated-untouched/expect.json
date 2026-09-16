@@ -1,0 +1,13 @@
+{
+  "expect": "typed",
+  "model": {
+    "name": "Ada",
+    "port": {
+      "$type": "int",
+      "$value": "1"
+    },
+    "blk": {
+      "x": "y"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {},
+  "lint": [
+    "W_HASH_LIKE_DATA"
+  ]
+}

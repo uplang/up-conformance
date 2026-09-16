@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "port": {
+      "$type": "int",
+      "$value": "8080"
+    }
+  }
+}

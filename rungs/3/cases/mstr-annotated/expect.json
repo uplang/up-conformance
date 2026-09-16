@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "script": {
+      "$annotation": {
+        "name": "bash"
+      },
+      "$value": "set -e\nmake"
+    }
+  }
+}

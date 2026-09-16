@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "n": {
+      "$type": "int",
+      "$value": "1000000"
+    }
+  }
+}

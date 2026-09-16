@@ -1,0 +1,11 @@
+{
+  "expect": "typed",
+  "model": {
+    "k": "us-west",
+    "p": {
+      "$type": "int",
+      "$value": "1"
+    }
+  },
+  "mode": "open"
+}

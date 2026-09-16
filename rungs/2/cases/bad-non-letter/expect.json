@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ANNOTATION",
+  "note": "Annotation identifier must begin with a letter."
+}

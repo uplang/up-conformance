@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_MISSING_VALUE",
+  "note": "colon form: ' #ff0000' is a comment, leaving no value — write color=#ff0000"
+}

@@ -1,0 +1,6 @@
+sh <<<
+cat <<EOF
+hi there
+EOF
+grep x <<< "$v"
+>>>

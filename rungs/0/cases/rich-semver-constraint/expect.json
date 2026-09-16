@@ -1,0 +1,6 @@
+{
+  "expect": "parse",
+  "model": {
+    "dep": ">=1.2.0"
+  }
+}

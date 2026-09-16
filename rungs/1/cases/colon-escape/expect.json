@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "note": "say \"hi\""
+  },
+  "note": "escapes work in a quoted colon value too"
+}

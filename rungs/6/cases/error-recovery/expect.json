@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "provisional": true,
+  "model": {
+    "name": "Alice",
+    "age": 30
+  },
+  "note": "PROVISIONAL: model reflects the draft suite; the rung's spec (and whether values coerce or stay opaque strings) is not finalized."
+}

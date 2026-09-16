@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "cmd": "!important"
+  },
+  "note": "A space-separated '!' is an ordinary value character, not an annotation marker."
+}

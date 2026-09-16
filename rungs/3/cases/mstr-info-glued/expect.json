@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "run": {
+      "$info": "bash",
+      "$value": "exit 0"
+    }
+  }
+}

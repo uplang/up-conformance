@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "s": {
+      "$type": "str",
+      "$value": "8080"
+    }
+  }
+}

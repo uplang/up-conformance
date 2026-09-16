@@ -1,0 +1,6 @@
+{
+  "expect": "parse",
+  "model": {
+    "sh": "cat <<EOF\nhi there\nEOF\ngrep x <<< \"$v\""
+  }
+}

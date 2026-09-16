@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ANNOTATION",
+  "note": "Items are never annotated. To type a list's elements, annotate the LIST (nums!ints [ ... ]), not the items. A '!' in a bare item is rejected."
+}

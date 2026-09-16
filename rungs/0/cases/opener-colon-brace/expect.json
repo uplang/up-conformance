@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": "{"
+  },
+  "lint": [
+    "W_LONE_OPENER"
+  ],
+  "note": "colon form does not open a block; lone '{' is a string and looks like a mistake"
+}

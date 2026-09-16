@@ -1,0 +1,14 @@
+{
+  "expect": "parse",
+  "provisional": true,
+  "model": {
+    "vars": {
+      "host": "localhost",
+      "port": 8080
+    },
+    "server_url": "http://${vars.host}:${vars.port}",
+    "escaped": "$${not a variable}",
+    "literal": "$bare is literal"
+  },
+  "note": "PROVISIONAL: model reflects the draft suite; the rung's spec (and whether values coerce or stay opaque strings) is not finalized."
+}

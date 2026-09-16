@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "s": "a\tb\nc\rd"
+  },
+  "note": "\\t \\n \\r escapes"
+}

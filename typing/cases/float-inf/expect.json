@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "x": {
+      "$type": "float",
+      "$value": "-inf"
+    }
+  }
+}

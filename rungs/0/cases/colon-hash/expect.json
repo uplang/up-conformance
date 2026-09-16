@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "task": "deploy at 5pm"
+  },
+  "note": "whitespace-preceded '#' ends the ':' value"
+}

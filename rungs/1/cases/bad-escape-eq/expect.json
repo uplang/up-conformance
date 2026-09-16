@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ESCAPE",
+  "note": "bad escape caught in the '=' form"
+}

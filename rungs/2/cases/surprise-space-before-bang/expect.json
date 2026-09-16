@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_DANGLING_TOKEN",
+  "note": "A space before '!' makes '!int' an ordinary value; '5' then dangles."
+}

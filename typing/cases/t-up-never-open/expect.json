@@ -1,0 +1,7 @@
+{
+  "expect": "error",
+  "code": "T_UNRESOLVED",
+  "line": 1,
+  "mode": "open",
+  "note": "the up namespace is defined by the spec alone and never passes through, even in open mode"
+}

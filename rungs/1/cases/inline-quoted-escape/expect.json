@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "xs": [
+      "a\"b",
+      "c"
+    ]
+  },
+  "note": "escapes work in inline quoted items; a quoted quote is not a separator"
+}

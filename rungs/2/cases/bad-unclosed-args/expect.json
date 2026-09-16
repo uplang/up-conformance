@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ANNOTATION",
+  "note": "'(' with no closing ')' on the line."
+}

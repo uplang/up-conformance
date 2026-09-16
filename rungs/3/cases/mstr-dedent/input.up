@@ -1,0 +1,6 @@
+blk {
+  script <<<
+    line one
+      indented
+    >>>
+}

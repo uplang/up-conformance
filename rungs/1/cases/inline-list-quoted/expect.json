@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "names": [
+      "a b",
+      "c"
+    ]
+  },
+  "note": "inline list items may be quoted; a quoted span keeps its interior spaces"
+}

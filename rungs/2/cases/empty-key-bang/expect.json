@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_EMPTY_KEY",
+  "note": "A leading '!' starts the annotation, leaving no key."
+}

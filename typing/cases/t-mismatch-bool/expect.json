@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "T_MISMATCH",
+  "line": 1
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "note": "spaced out"
+  },
+  "note": "leading and trailing whitespace stripped by the ':' form"
+}

@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "server": {
+      "host": "localhost"
+    }
+  },
+  "note": "Rung 1 inline block (single line)"
+}

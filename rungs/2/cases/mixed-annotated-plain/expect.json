@@ -1,0 +1,13 @@
+{
+  "expect": "parse",
+  "model": {
+    "name": "Alice",
+    "port": {
+      "$annotation": {
+        "name": "int"
+      },
+      "$value": "8080"
+    }
+  },
+  "note": "A plain member is unwrapped; only an annotated member becomes a tagged value object."
+}

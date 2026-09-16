@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "payload": "{\"a\":1}"
+  },
+  "note": "leading '{' is raw text in the colon form"
+}

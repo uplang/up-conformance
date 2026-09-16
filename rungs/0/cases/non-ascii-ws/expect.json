@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "a": "1 b=2"
+  },
+  "lint": [
+    "W_NON_ASCII_WS"
+  ],
+  "note": "non-breaking space typed for a separator; silently one member, not two"
+}

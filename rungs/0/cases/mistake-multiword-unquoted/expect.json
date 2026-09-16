@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_DANGLING_TOKEN",
+  "note": "common: multi-word value must be quoted or use the ':' form"
+}

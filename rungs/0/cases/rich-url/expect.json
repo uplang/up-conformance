@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "url": "https://example.com/p?a=1&b=2#frag"
+  },
+  "note": "URL is a bare token; the fragment '#' is glued so it is literal"
+}

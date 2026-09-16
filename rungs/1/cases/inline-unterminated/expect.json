@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_UNTERMINATED_STRING",
+  "note": "inline quoted item with no closing quote"
+}

@@ -1,0 +1,8 @@
+{
+  "expect": "parse",
+  "model": {
+    "l": [
+      "a=b"
+    ]
+  }
+}

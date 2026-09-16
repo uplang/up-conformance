@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_MISSING_VALUE",
+  "note": "an odd run of whitespace tokens: '2' is a key with no value"
+}

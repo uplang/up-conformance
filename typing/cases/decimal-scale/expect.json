@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "amount": {
+      "$type": "decimal",
+      "$value": "5.00"
+    }
+  }
+}

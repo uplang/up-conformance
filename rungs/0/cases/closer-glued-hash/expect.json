@@ -1,0 +1,4 @@
+{
+  "expect": "error",
+  "code": "E_CONTENT_AFTER_CLOSER"
+}

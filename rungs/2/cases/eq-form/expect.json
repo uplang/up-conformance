@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "port": {
+      "$annotation": {
+        "name": "int"
+      },
+      "$value": "8080"
+    }
+  }
+}

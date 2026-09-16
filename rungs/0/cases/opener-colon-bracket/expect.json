@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": "["
+  },
+  "lint": [
+    "W_LONE_OPENER"
+  ]
+}

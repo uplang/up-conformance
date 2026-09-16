@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "-": "item"
+  },
+  "note": "common misunderstanding: a YAML '- item' is a member with key '-', not a list element"
+}

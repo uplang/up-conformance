@@ -1,0 +1,15 @@
+{
+  "expect": "typed",
+  "model": {
+    "ports": [
+      {
+        "$type": "int",
+        "$value": "8080"
+      },
+      {
+        "$type": "int",
+        "$value": "9090"
+      }
+    ]
+  }
+}

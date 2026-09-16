@@ -1,0 +1,9 @@
+{
+  "expect": "parse",
+  "model": {
+    "items": [
+      "a"
+    ]
+  },
+  "note": "comments are allowed inside a list body"
+}

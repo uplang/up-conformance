@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "addr": "[::1]:8080"
+  },
+  "note": "leading '[' is raw text in the colon form"
+}

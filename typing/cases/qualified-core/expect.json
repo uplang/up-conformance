@@ -1,0 +1,10 @@
+{
+  "expect": "typed",
+  "model": {
+    "port": {
+      "$type": "int",
+      "$value": "8080"
+    }
+  },
+  "note": "up.type.int is the fully-qualified spelling of int; $type carries the canonical (bare) spelling"
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "link": "http://example.com/page#section"
+  },
+  "note": "glued '#' is literal"
+}

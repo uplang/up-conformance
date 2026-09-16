@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "name": "a value with",
+    "spaces": "is ok"
+  }
+}

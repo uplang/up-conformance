@@ -1,0 +1,4 @@
+{
+  "expect": "error",
+  "code": "E_UNTERMINATED_STRING"
+}

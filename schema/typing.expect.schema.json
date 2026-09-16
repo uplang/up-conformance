@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uplang.org/up-conformance/schema/typing.expect.schema.json",
+  "title": "UP typing-layer case expectation",
+  "description": "The expected outcome of applying the typing layer (spec §9) to the sibling input.up. One object per case directory under typing/cases/.",
+  "type": "object",
+  "required": ["expect"],
+  "additionalProperties": false,
+  "properties": {
+    "expect": {
+      "enum": ["typed", "error"],
+      "description": "Whether the typing processor MUST yield a typed model (typed) or report a typing error (error)."
+    },
+    "model": {
+      "description": "expect=typed only. The typed data model, as an order-significant JSON projection over the parse projection: an untyped member keeps its parse projection (string/object/array); a member whose annotation resolved to a type semantic projects as {\"$type\": <name>, \"$value\": <canonical form>} — $type is the resolved type name (a bare name resolves in the sealed core namespace: int ≡ up.type.int, spec §9) and $value is the value's canonical form as a string. Typing never coerces the parse model; scalars stay strings.",
+      "type": ["object", "array", "string"]
+    },
+    "mode": {
+      "description": "The typing mode the case MUST be run under. \"open\" lets unresolved extension names pass through untyped (core-namespace failures still error, spec §9). Absent means the default strict mode.",
+      "const": "open"
+    },
+    "code": {
+      "description": "expect=error only. The stable typing error code (T_*) the processor MUST report — a code space disjoint from the parse E_*/W_* spaces. Match by code, not message text.",
+      "type": "string",
+      "pattern": "^T_[A-Z_]+$"
+    },
+    "line": {
+      "description": "expect=error only. The 1-based input line the error MUST be reported at (a failing list element under distribution reports its own line, spec §9).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "note": {
+      "description": "Human-readable explanation of what the case pins.",
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "expect": { "const": "error" } }, "required": ["expect"] },
+      "then": { "required": ["code"] }
+    },
+    {
+      "if": { "properties": { "expect": { "const": "typed" } }, "required": ["expect"] },
+      "then": { "required": ["model"] }
+    }
+  ]
+}

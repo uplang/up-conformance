@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "texts": [
+      {
+        "$info": "note",
+        "$value": "body"
+      }
+    ]
+  }
+}

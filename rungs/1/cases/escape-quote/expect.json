@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "msg": "he said \"hi\""
+  },
+  "note": "\\\" escapes a quote inside a quoted string"
+}

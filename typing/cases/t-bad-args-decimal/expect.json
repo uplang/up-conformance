@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "T_BAD_ARGS",
+  "line": 1
+}

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "height": "5'2\""
+  },
+  "note": "an interior '\"' is literal; only a leading '\"' opens a quoted string"
+}

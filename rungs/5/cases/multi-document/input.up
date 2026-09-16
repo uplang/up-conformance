@@ -1,0 +1,16 @@
+server {
+  host localhost
+  port!int 8080
+}
+
+#!up
+server {
+  host production.example.com
+  port!int 443
+}
+
+#!up: staging
+server {
+  host staging.example.com
+  port!int 8080
+}

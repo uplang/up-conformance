@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "path": "${HOME}/bin"
+  },
+  "note": "first char '$'; the '{' is interior, so not a block"
+}

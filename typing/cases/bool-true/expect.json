@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "on": {
+      "$type": "bool",
+      "$value": "true"
+    }
+  }
+}

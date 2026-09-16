@@ -1,0 +1,11 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "note": "Rung 1 inline list (whitespace-separated)"
+}

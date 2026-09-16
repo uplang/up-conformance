@@ -1,0 +1,14 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": {
+      "$annotation": {
+        "name": "ints"
+      },
+      "$value": [
+        "8080",
+        "9090"
+      ]
+    }
+  }
+}

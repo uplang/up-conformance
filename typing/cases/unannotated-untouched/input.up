@@ -1,0 +1,5 @@
+name Ada
+port!int 1
+blk {
+  x y
+}

@@ -1,0 +1,21 @@
+{
+  "expect": "parse",
+  "provisional": true,
+  "model": {
+    "users": [
+      {
+        "id": "1",
+        "name": "Alice",
+        "email": "alice@example.com",
+        "age": "30"
+      },
+      {
+        "id": "2",
+        "name": "Bob",
+        "email": "bob@example.com",
+        "age": "25"
+      }
+    ]
+  },
+  "note": "PROVISIONAL: model reflects the draft suite; the rung's spec (and whether values coerce or stay opaque strings) is not finalized."
+}

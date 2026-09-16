@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "s": "café"
+  },
+  "note": "\\u00e9 is a Unicode code point"
+}

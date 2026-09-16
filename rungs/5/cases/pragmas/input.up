@@ -1,0 +1,10 @@
+!use [faker, time, env]
+!lint {
+  no-empty-values!level error
+  require-type-annotations!level warning
+}
+
+server {
+  host localhost
+  port!int 8080
+}

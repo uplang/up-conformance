@@ -1,0 +1,23 @@
+# The corpus is a normative spec artifact: every expectation must obey the
+# runner contract and manifest.json must never drift from the case
+# directories. Pure-stdlib validation, no dependencies.
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - run: python3 tools/validate.py

@@ -1,0 +1,7 @@
+{
+  "expect": "parse",
+  "model": {
+    "//": "note"
+  },
+  "note": "common misunderstanding: '//' is not a comment — it is a key; comments use '#'"
+}

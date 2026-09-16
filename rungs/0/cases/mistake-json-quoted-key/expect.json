@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_DANGLING_TOKEN",
+  "note": "JSON habit: quoted key — a member must start with an unquoted key"
+}

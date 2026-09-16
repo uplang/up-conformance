@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_BAD_ANNOTATION",
+  "note": "A '!' in an inline bare list item is rejected — list items are never annotated; annotate the list instead."
+}

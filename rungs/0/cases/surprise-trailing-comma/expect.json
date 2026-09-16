@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "tags": [
+      "web,",
+      "api"
+    ]
+  },
+  "note": "common misunderstanding: a trailing comma is part of the bare token, not a separator"
+}

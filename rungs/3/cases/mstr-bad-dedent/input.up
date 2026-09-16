@@ -1,0 +1,6 @@
+blk {
+  script <<<
+  ok line
+short
+  >>>
+}

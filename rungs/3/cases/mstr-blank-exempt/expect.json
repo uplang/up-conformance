@@ -1,0 +1,6 @@
+{
+  "expect": "parse",
+  "model": {
+    "text": "first\n\nsecond"
+  }
+}

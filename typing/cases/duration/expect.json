@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "d": {
+      "$type": "duration",
+      "$value": "PT1H30M"
+    }
+  }
+}

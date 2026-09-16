@@ -1,0 +1,7 @@
+vars {
+  host localhost
+  port!int 8080
+}
+server_url: http://${vars.host}:${vars.port}
+escaped: $${not a variable}
+literal: $bare is literal

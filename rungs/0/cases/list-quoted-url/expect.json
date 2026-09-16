@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "urls": [
+      "https://a.example.com",
+      "https://b.example.com"
+    ]
+  },
+  "note": "wide-charset list items (URLs) must be quoted in Rung 0"
+}

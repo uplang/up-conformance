@@ -1,0 +1,5 @@
+{
+  "expect": "error",
+  "code": "E_MIXED_FORMS",
+  "note": "inline members must use one form; mixing '=' and whitespace on one line is an error"
+}

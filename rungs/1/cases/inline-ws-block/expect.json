@@ -1,0 +1,10 @@
+{
+  "expect": "parse",
+  "model": {
+    "pt": {
+      "x": "1",
+      "y": "2"
+    }
+  },
+  "note": "inline block members separate on whitespace, like the rest of UP"
+}

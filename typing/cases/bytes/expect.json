@@ -1,0 +1,9 @@
+{
+  "expect": "typed",
+  "model": {
+    "b": {
+      "$type": "bytes",
+      "$value": "aGVsbG8="
+    }
+  }
+}

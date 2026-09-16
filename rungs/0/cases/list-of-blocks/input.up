@@ -1,0 +1,8 @@
+servers [
+  {
+    host alpha
+  }
+  {
+    host beta
+  }
+]
